@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Click mo Dali🥹</title>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>Mahal mo parin siya?</h1>
+      <div class="choice">
+        <label><input type="radio" name="choose" value="Oo" /> Oo</label>
+        <label><input type="radio" name="choose" value="Hindi" /> Hindi</label>
+      </div>
+
+      <div class="whatif">
+        <video id="myVideo" src="/hey.mp4" muted playsinline></video>
+             <audio id="whatifAudio" src="what if.mp3"></audio>
+      </div>
+
+      <div class="videos" id="videos">
+        <div class="for-image" id="no"></div>
+        <div class="background-music" id="music">
+          <audio id="bgMusic" controls autoplay loop>
+            <source src="kung tayo talaga.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body {
+      background: whitesmoke;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box {
+      
+      width: 500px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .choice {
+      height: 50px;
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .videos {
+      height: 500px;
+      display: grid;
+ 
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 100px;
+      display: none;
+    }
+    .for-image {
+      display: none;
+      width: 100%;
+      margin: auto;
+      height: 100%;
+      background-image: url(alden-richards-lang-sakalam-v0-qzc6d045qd2f1.webp);
+      background-position: center;
+      background-size: cover;
+    }
+    .background-music {
+      grid-column: 1 / span 3;
+      display: none;
+    }
+    .whatif {
+      height: auto;
+      width: 100%;
+      margin: auto;
+    }
+    video {
+      width: 100%;
+      height: 500px;
+      display: none;    
+    }
+    audio#whatifAudio {
+      display: none; 
+    }
+
+ 
+    @media screen and (max-width: 1024px) {
+      .box {
+        width: 90%;
+      }
+  
+    }
+
+   
+    @media screen and (max-width: 500px) {
+      .choice {
+        flex-direction: column;
+        height: auto;
+        gap: 5px;
+      }
+      .box {
+        padding: 15px;
+      }
+      .for-image {
+        height: 250px;
+      }
+      h1 {
+        background-color: grey;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ooInput = document.querySelector('input[value="Oo"]');
+      const hindiInput = document.querySelector('input[value="Hindi"]');
+      const videosContainer = document.querySelector(".videos");
+      const forImage = document.querySelector(".for-image");
+      const music = document.querySelector(".background-music");
+      const video = document.getElementById("myVideo");
+      const audio = document.getElementById("bgMusic");
+      const whatifAudio = document.getElementById("whatifAudio");
+      const videos = document.getElementById('videos');
+
+      ooInput.addEventListener("change", function () {
+        if (this.checked) {
+          videosContainer.style.display = "grid";
+          forImage.style.display = "block";
+          music.style.display = "block";
+
+          video.style.display = "none";
+          video.pause();
+          whatifAudio.pause();
+
+          audio.play();
+        }
+      });
+
+      hindiInput.addEventListener("change", function () {
+        if (this.checked) {
+          videosContainer.style.display = "none";
+          forImage.style.display = "none";
+          music.style.display = "none";
+          videos.style.display = "none"
+          audio.pause();
+
+          video.style.display = "block";
+         video.muted = true; 
+          video.play();
+
+          whatifAudio.play();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
